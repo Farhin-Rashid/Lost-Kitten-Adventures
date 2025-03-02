@@ -2,47 +2,53 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
-    public float jump;
-    public bool isJumping;
-    private float move;
-    private Rigidbody2D rb;
+    private Rigidbody2D player;
+    public float jumpSpeed = 7f;
+    public float movementSpeed = 5f;
+    private bool isOnGround = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        //Get the player Rigidbody
-        rb = GetComponent<Rigidbody2D>();
+        player = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Add horizontal movement on key press
-        move = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(speed * move, rb.linearVelocity.y);
-
-        //Jump when space bar is pressed and object is not in the air
-        if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
+        // Handle horizontal movement
+        float horizontalDirection = 0f;
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            rb.AddForce(new Vector2(rb.linearVelocity.x, jump));
+            horizontalDirection = 1f;
+            player.linearVelocity = new Vector2(horizontalDirection * movementSpeed, player.linearVelocityY);
+        }
+        
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            horizontalDirection = -1f;
+            player.linearVelocity = new Vector2(horizontalDirection * movementSpeed, player.linearVelocityY);
+        }
+
+        // Handle jump
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && isOnGround)
+        {
+            player.AddForce(new Vector2(0f, jumpSpeed), ForceMode2D.Impulse);
         }
     }
 
-    //Function to detect if object is on ground
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isJumping = false;
+            isOnGround = true;
         }
     }
 
-    private void OnCollisionExit(Collision other)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isJumping = true;
+            isOnGround = false;
         }
     }
 }
