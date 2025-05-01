@@ -1,42 +1,62 @@
 using UnityEngine;
-
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D player;
-    public float jumpSpeed = 7f;
-    public float movementSpeed = 5f;
-    private bool isOnGround = false;
+    [SerializeField] private Rigidbody2D rb;
+    private float horizontal;
+    private float speed = 15f;
+    private float jumpingPower = 20f;
+    private bool isFacingRight;
+    public bool isOnGround;
+    private Vector3 startingPoint;
+    public bool hasKey;
 
-
-    void Start()
+    // Initialize
+    private void Start()
     {
-        player = GetComponent<Rigidbody2D>();
+        isFacingRight = true;
+        isOnGround = false;
+        startingPoint = this.transform.position;
+        hasKey = false;
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        // Handle horizontal movement
-        float horizontalDirection = 0f;
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            horizontalDirection = 1f;
-            player.linearVelocity = new Vector2(horizontalDirection * movementSpeed, player.linearVelocityY);
-        }
+        horizontal = Input.GetAxisRaw("Horizontal");
         
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        // Jump
+        if (Input.GetKey(KeyCode.Space) && isOnGround)
         {
-            horizontalDirection = -1f;
-            player.linearVelocity = new Vector2(horizontalDirection * movementSpeed, player.linearVelocityY);
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpingPower);
         }
 
-        // Handle jump
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && isOnGround)
+        // Turn to face movement direction
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
-            player.AddForce(new Vector2(0f, jumpSpeed), ForceMode2D.Impulse);
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
+        }
+
+        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocityY);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Reset to start
+        if (collision.gameObject.CompareTag("Boundary"))
+        {
+            this.transform.position = startingPoint;
+        }
+
+        // Collect key item
+        if (collision.gameObject.CompareTag("Key"))
+        {
+            hasKey = true;
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
@@ -44,11 +64,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isOnGround = false;
+            isOnGround = false; 
         }
     }
 }
