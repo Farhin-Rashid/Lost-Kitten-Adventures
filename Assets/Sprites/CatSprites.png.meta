@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aacc7989be9d940c98c19b295c34a926
+guid: 827865c20bff65348b0b75101de435cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6161070754210539384
-    second: witch_0
+      213: -853655678716467170
+    second: CatSprites_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: witch_0
+      name: CatSprites_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 500
+        width: 275
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8889b33baca7f7aa0800000000000000
-      internalID: -6161070754210539384
+      spriteID: e182c9ddea43724f0800000000000000
+      internalID: -853655678716467170
       vertices: []
       indices: 
       edges: []
