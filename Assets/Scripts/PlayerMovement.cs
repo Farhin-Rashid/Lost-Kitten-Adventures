@@ -61,7 +61,8 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
-        }
+        } 
+        rb.linearVelocity = new Vector2(rb.linearVelocityX, -9.8f);
     }
 
     void OnCollisionExit2D(Collision2D collision)
