@@ -8,6 +8,7 @@ TagManager:
   - Boundary
   - Door
   - Key
+  - Yarn
   layers:
   - Default
   - TransparentFX
