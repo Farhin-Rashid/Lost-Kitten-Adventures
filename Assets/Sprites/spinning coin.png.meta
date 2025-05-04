@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spinning coin_0: 3719480491199129836
+      spinning coin_1: -2156432182288038991
+      spinning coin_2: -7615074975443088629
+      spinning coin_3: 3756172864441349012
+      spinning coin_4: 3403564149457866676
+      spinning coin_5: -1885781093302298215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
