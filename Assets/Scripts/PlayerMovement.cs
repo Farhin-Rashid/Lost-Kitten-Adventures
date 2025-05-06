@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isOnGround;
     private Vector3 startingPoint;
     public bool hasKey;
+    public bool hasYarn;
 
     // Initialize
     private void Start()
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
         isOnGround = false;
         startingPoint = this.transform.position;
         hasKey = false;
+        hasYarn = false;
     }
 
     private void FixedUpdate()
@@ -47,12 +49,6 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Boundary"))
         {
             this.transform.position = startingPoint;
-        }
-
-        // Collect key item
-        if (collision.gameObject.CompareTag("Key"))
-        {
-            hasKey = true;
         }
     }
 
