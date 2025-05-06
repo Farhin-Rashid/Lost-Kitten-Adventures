@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: dacabe397f89d4cfc84021e22326ffd2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1636534521479592599
+    second: wingspink_0
+  - first:
+      213: -3936106916455733901
+    second: wingspink_1
+  - first:
+      213: -4764883451452508604
+    second: wingspink_2
+  - first:
+      213: -9161491564141784394
+    second: wingspink_3
+  - first:
+      213: 2771959507409102992
+    second: wingspink_4
+  - first:
+      213: 1751051716637693910
+    second: wingspink_5
+  - first:
+      213: 4005049825873167330
+    second: wingspink_6
+  - first:
+      213: 7519208839454268387
+    second: wingspink_7
+  - first:
+      213: 7757582856886713184
+    second: wingspink_8
+  - first:
+      213: 5818596417185513059
+    second: wingspink_9
+  - first:
+      213: -8099079221770985408
+    second: wingspink_10
+  - first:
+      213: 2497357569290623002
+    second: wingspink_11
+  - first:
+      213: -4415068562670485593
+    second: wingspink_12
+  - first:
+      213: -3624091069095144203
+    second: wingspink_13
+  - first:
+      213: 949484218495926831
+    second: wingspink_14
+  - first:
+      213: 7259439375396750996
+    second: wingspink_15
+  - first:
+      213: -5361396432727814746
+    second: wingspink_16
+  - first:
+      213: 8751187928879387373
+    second: wingspink_17
+  - first:
+      213: 8047144479585234697
+    second: wingspink_18
+  - first:
+      213: 2708277001982295463
+    second: wingspink_19
+  - first:
+      213: -7441852275605338438
+    second: wingspink_20
+  - first:
+      213: 91788531596782875
+    second: wingspink_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wingspink_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 735
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9658b80068cd949e0800000000000000
+      internalID: -1636534521479592599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 722
+        width: 69
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375a2b62d932069c0800000000000000
+      internalID: -3936106916455733901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_2
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 713
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44639001fbbbfddb0800000000000000
+      internalID: -4764883451452508604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_3
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 692
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2579a46f7dbd080800000000000000
+      internalID: -9161491564141784394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_4
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 682
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098e2ea4c7af77620800000000000000
+      internalID: 2771959507409102992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_5
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 691
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d71781424cfc4810800000000000000
+      internalID: 1751051716637693910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_6
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 704
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e309e2d89bc49730800000000000000
+      internalID: 4005049825873167330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_7
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 673
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb16abd998995860800000000000000
+      internalID: 7519208839454268387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 683
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b7464c18878ab60800000000000000
+      internalID: 7757582856886713184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_9
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 663
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ef3b9fc9ecfb050800000000000000
+      internalID: 5818596417185513059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 323
+        width: 387
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040e79acb5a4a9f80800000000000000
+      internalID: -8099079221770985408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_11
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 668
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1853ba4a7568a220800000000000000
+      internalID: 2497357569290623002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_12
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 323
+        width: 374
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aff707c8868ab2c0800000000000000
+      internalID: -4415068562670485593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 592
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f41be8bf54a4bdc0800000000000000
+      internalID: -3624091069095144203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_14
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 623
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f220a4bbdde3d2d00800000000000000
+      internalID: 949484218495926831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_15
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 577
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496c10756a5beb460800000000000000
+      internalID: 7259439375396750996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 561
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad463fa95e7895b0800000000000000
+      internalID: -5361396432727814746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_17
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 519
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2da873e07727970800000000000000
+      internalID: 8751187928879387373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_18
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 510
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f6ce1c4433daf60800000000000000
+      internalID: 8047144479585234697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_19
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 458
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7adb380959bb59520800000000000000
+      internalID: 2708277001982295463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_20
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 398
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab68c91b8ca39b890800000000000000
+      internalID: -7441852275605338438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wingspink_21
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 89
+        width: 77
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1de744ee29164100800000000000000
+      internalID: 91788531596782875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f140a4fd502444621af16cc939a51b1e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wingspink_0: -1636534521479592599
+      wingspink_1: -3936106916455733901
+      wingspink_10: -8099079221770985408
+      wingspink_11: 2497357569290623002
+      wingspink_12: -4415068562670485593
+      wingspink_13: -3624091069095144203
+      wingspink_14: 949484218495926831
+      wingspink_15: 7259439375396750996
+      wingspink_16: -5361396432727814746
+      wingspink_17: 8751187928879387373
+      wingspink_18: 8047144479585234697
+      wingspink_19: 2708277001982295463
+      wingspink_2: -4764883451452508604
+      wingspink_20: -7441852275605338438
+      wingspink_21: 91788531596782875
+      wingspink_3: -9161491564141784394
+      wingspink_4: 2771959507409102992
+      wingspink_5: 1751051716637693910
+      wingspink_6: 4005049825873167330
+      wingspink_7: 7519208839454268387
+      wingspink_8: 7757582856886713184
+      wingspink_9: 5818596417185513059
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
