@@ -11,8 +11,6 @@ public class CoinCollect : MonoBehaviour
             if (collectSound != null)
                 AudioSource.PlayClipAtPoint(collectSound, transform.position);
 
-            CoinManager.Instance.AddCoin();
-
             Destroy(gameObject); // remove coin from scene
         }
     }
