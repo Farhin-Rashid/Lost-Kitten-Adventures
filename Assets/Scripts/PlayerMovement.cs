@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     private float horizontal;
     private float speed = 15f;
-    private float jumpingPower = 20f;
+    private float jumpingPower = 25f;
     private bool isFacingRight;
     public bool isOnGround;
     private Vector3 startingPoint;

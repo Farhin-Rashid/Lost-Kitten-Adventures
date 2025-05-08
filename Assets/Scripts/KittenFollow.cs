@@ -1,15 +1,17 @@
 using UnityEngine;
-using UnityEngine.AI; // <-- Make sure to include this namespace!
+using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent))] // Ensures the agent component exists
+[RequireComponent(typeof(NavMeshAgent))]
 public class KittenFollow : MonoBehaviour
 {
-    public Transform witchTarget; // Drag the Witch object here in the Inspector
+    public Transform witchTarget;
     private NavMeshAgent agent;
+
+    [SerializeField] private float followDistance = 15f;
+    [SerializeField] private Vector3 followOffset = new Vector3(-10f, 0, 0); // Left side offset
 
     void Awake()
     {
-        // Get the NavMeshAgent component attached to this kitten
         agent = GetComponent<NavMeshAgent>();
 
         if (agent == null)
@@ -20,11 +22,19 @@ public class KittenFollow : MonoBehaviour
 
     void Update()
     {
-        // Check if a target has been assigned
         if (witchTarget != null)
         {
-            // Tell the agent to move towards the target's current position
-            agent.SetDestination(witchTarget.position);
+            float distance = Vector2.Distance(transform.position, witchTarget.position);
+
+            if (distance > 15f) // Adjust this number for space between kitten and witch
+            {
+                agent.SetDestination(witchTarget.position);
+            }
+            else
+            {
+                agent.ResetPath(); // Stop moving when too close
+            }
         }
     }
+
 }
