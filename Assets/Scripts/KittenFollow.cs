@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(NavMeshAgent))] //Ensures the agent component exists
 public class KittenFollow : MonoBehaviour
 {
     public Transform witchTarget;
@@ -12,7 +12,7 @@ public class KittenFollow : MonoBehaviour
 
     void Awake()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>(); //Get the NavMeshAgent component attached to the kitten
 
         if (agent == null)
         {
@@ -22,13 +22,14 @@ public class KittenFollow : MonoBehaviour
 
     void Update()
     {
+        //check if a target has been assigned
         if (witchTarget != null)
         {
             float distance = Vector2.Distance(transform.position, witchTarget.position);
 
             if (distance > 15f) // Adjust this number for space between kitten and witch
             {
-                agent.SetDestination(witchTarget.position);
+                agent.SetDestination(witchTarget.position); //Tell the agent to move towards the target's current position
             }
             else
             {
